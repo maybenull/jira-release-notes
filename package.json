@@ -1,0 +1,17 @@
+{
+  "name": "jira-release-notes",
+  "version": "1.0.0",
+  "description": "generate release notes from git commits ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+	"cli-progress": "^3.8.2",
+	"commander": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "jira-connector": "^3.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
