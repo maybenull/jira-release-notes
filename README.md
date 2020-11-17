@@ -1,17 +1,22 @@
 # jira-release-notes
-generate release notes from git commits and jira
+generate release notes from git commits and jira api
 
 ## Example
+**Commit**
+```bash
 git commit -m 'ABC-123 went to end of universe'
+```
+**Use**
+```
+node index.js --compare=somebranch --base=main
 
-node index.js --compare=<branch> --base=main
-
-outputs following row for each unique jira issue number in commitb
-------------------------------------------------------------------
-[ABC-123](https://yourcompany.atlassian.net/browse/ABC-123)
+*Project ABC Name from Jira*
+[ABC-123](https://yourcompany.atlassian.net/browse/ABC-123) jira description for ABC-123 
+[ABC-115](https://yourcompany.atlassian.net/browse/ABC-115) jira description for ABC-115
+```
 
 ## Usage
-
+```bash
 node index.js
 
 Usage: release-notes --compare origin/release/2020-01-012
@@ -28,7 +33,7 @@ Options:
 Commands:
   request <issueKey>             make http request for issue key
   projects                       make http request for projects
-
+```
 
 ## ToDo
 * make this a library, currently requires copying index.js and dependencies into a node project
