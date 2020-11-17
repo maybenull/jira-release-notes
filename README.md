@@ -8,6 +8,12 @@ git commit -m 'ABC-123 went to end of universe'
 ```
 **Use**
 ```
+# optionally use .env file
+JIRA_URL=https://yourcompany.atlassian.net
+JIRA_USERNAME=yourusername
+JIRA_KEY=key_generated_using_atlassian_site
+
+# run script
 node index.js --compare=somebranch --base=main
 
 *Project ABC Name from Jira*
