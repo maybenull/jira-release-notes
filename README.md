@@ -16,6 +16,7 @@ JIRA_KEY=key_generated_using_atlassian_site
 # run script
 node index.js --compare=somebranch --base=main
 
+# output
 *Project ABC Name from Jira*
 [ABC-123](https://yourcompany.atlassian.net/browse/ABC-123) jira description for ABC-123 
 [ABC-115](https://yourcompany.atlassian.net/browse/ABC-115) jira description for ABC-115
